@@ -7,34 +7,48 @@ This is a multi-page personal website built as part of the Web & Mobile Developm
 ## Project Structure
 
 ```
-├── index.html          # Home page with personal introduction
-├── education.html      # Education history in tabular format
-├── schedule.html       # Weekly schedule table
-├── contact.html        # Contact form with various input types
-├── questionnaire.html  # Feedback questionnaire (extra feature)
-├── favicon.ico         # Website favicon
-└── README.md          # Project documentation
+├── index.html                    # Home page with personal introduction
+├── education-and-experience.html # Education history and professional experience
+├── schedule.html                 # Weekly class schedule table
+├── contact.html                  # Contact form with various input types
+├── favicon.ico                   # Website favicon
+├── images/
+│   ├── profile.png              # Profile picture
+│   └── projects/                # Project showcase images
+│       ├── aventra.png
+│       ├── crable.png
+│       ├── glorri-pricing.png
+│       ├── glorri-talents.png
+│       ├── ltc-angels.png
+│       ├── openconnect.png
+│       ├── seclub.png
+│       ├── skilltap.png
+│       └── usg-website.png
+└── README.md                    # Project documentation
 ```
 
 ## Features Implemented
 
 ### ✅ Required Features
 
-- **4+ Pages**: Home, Education, Schedule, Contact, Questionnaire
+- **4 Pages**: Home, Education & Experience, Schedule, Contact
 - **Navigation**: All pages interconnected with anchor tags
 - **HTML Content**: Headings, paragraphs, lists, links, images
 - **Meta Elements**: Charset, description, author, viewport
-- **Tables**: Education history and weekly schedule
+- **Tables**: Education history, professional experience, and class schedule
 - **Forms**: Comprehensive contact form with multiple input types
 - **Favicon**: Included in all pages
 - **UTF-8 Encoding**: With emoji usage throughout
 
 ### ✅ Extra Features
 
-- **Questionnaire Page**: Advanced form with rating scales, checkboxes, radio buttons
 - **HTML5 Semantic Elements**: header, nav, main, section, article, footer
+- **Professional Experience Section**: Comprehensive work history with LinkedIn integration
+- **Volunteering & Leadership**: Detailed leadership roles and community involvement
+- **Skills & Certifications**: Technical skills and professional certifications
+- **Real Class Schedule**: Actual Fall 2025 schedule from calendar integration
+- **Project Portfolio**: Multiple live project showcases with working links
 - **Accessibility Features**: Proper form labels, fieldsets, legends
-- **Professional Content**: Realistic personal information and schedules
 
 ## Technical Specifications
 
@@ -58,19 +72,23 @@ This is a multi-page personal website built as part of the Web & Mobile Developm
 - Semantic HTML structure
 - Descriptive link text
 
+## Live Website
+
+**Portfolio**: [Valeh Ismayilov Personal Website](https://www.valehismayilov.com)
+**LinkedIn**: [linkedin.com/in/vismayilov](https://linkedin.com/in/vismayilov)
+
 ## Setup Instructions
 
 1. **Clone/Download**: Get all HTML files in the same directory
-2. **Images**: Add your own `profile.jpg` and `project-image.jpg` to the root directory
-3. **Email**: Update email addresses in forms to your actual email
-4. **Content**: Customize the personal information to reflect your background
+2. **Images**: Profile picture and project images are included in `/images/` directory
+3. **Formspree Integration**: Contact form uses Formspree for email handling
+4. **Content**: All content is customized with real professional information
 
-## Missing Assets
+## Assets Included
 
-To complete the website, you'll need to add:
-
-- `profile.jpg` - Your profile picture (200x200px recommended)
-- `project-image.jpg` - A project showcase image (300x200px recommended)
+- `images/profile.png` - Professional profile picture
+- `images/projects/` - Project showcase images for all major projects
+- `favicon.ico` - Website favicon
 
 ## Browser Compatibility
 
@@ -78,12 +96,20 @@ To complete the website, you'll need to add:
 - No CSS/JavaScript dependencies
 - Pure HTML implementation as required
 
+## Project Highlights
+
+- **Real Professional Data**: All experience and education information sourced from LinkedIn
+- **Live Project Links**: Working links to actual deployed projects (Skilltap, Glorri, OpenConnect, etc.)
+- **Comprehensive Portfolio**: Showcases full-stack development experience across multiple startups
+- **Leadership Experience**: Detailed volunteering and leadership roles in tech community
+- **Accurate Schedule**: Real Fall 2025 class schedule integrated from calendar data
+
 ## Future Enhancements
 
 - Add CSS styling in Capstone Project 2
 - Implement responsive design
 - Add JavaScript interactivity
-- Include actual project portfolio
+- Expand project portfolio section
 
 ## Author
 
