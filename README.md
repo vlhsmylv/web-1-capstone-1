@@ -104,19 +104,8 @@ This is a multi-page personal website built as part of the Web & Mobile Developm
 - **Leadership Experience**: Detailed volunteering and leadership roles in tech community
 - **Accurate Schedule**: Real Fall 2025 class schedule integrated from calendar data
 
-## Future Enhancements
-
-- Add CSS styling in Capstone Project 2
-- Implement responsive design
-- Add JavaScript interactivity
-- Expand project portfolio section
-
 ## Author
 
-Valeh Ismayilov  
-Web & Mobile Development Student  
+Valeh Ismayilov 15706
+3rd Year IT Student
 ADA University
-
-## Validation
-
-All HTML files should be validated using W3C HTML Validator to ensure proper markup.
