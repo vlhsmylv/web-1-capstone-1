@@ -10,158 +10,168 @@
     <meta name="author" content="Valeh Ismayilov" />
     <title>Valeh Ismayilov - Weekly Schedule</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>My Weekly Schedule 📅</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li>
-            <a href="./education-and-experience.html">Education & Experience</a>
-          </li>
-          <li><a href="./schedule.html">Weekly Schedule</a></li>
-          <li><a href="./contact.html">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./education-and-experience.html">Education & Experience</a>
+        </li>
+        <li><a href="./schedule.html" class="active">Weekly Schedule</a></li>
+        <li><a href="./contact.html">Contact Me</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
 
-    <main>
-      <section>
-        <h2>Fall 2025 Schedule</h2>
+    <div class="container">
+      <header>
+        <h1>My Weekly Schedule 📅</h1>
+      </header>
+
+      <main>
+        <section>
+          <h2>Fall 2025 Schedule</h2>
+          <p>
+            Here's my Fall 2025 class schedule. Times are shown in Asia/Tbilisi
+            timezone.
+          </p>
+        </section>
+
+        <article>
+          <h3>Class Schedule</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8:30 AM - 9:45 AM</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                  <strong>Intro to Software Engineering</strong><br />Room: B101
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>10:00 AM - 11:15 AM</td>
+                <td>-</td>
+                <td><strong>Web & Mobile I</strong><br />Room: B203</td>
+                <td><strong>Database Systems</strong><br />Room: D209</td>
+                <td><strong>Web & Mobile I</strong><br />Room: B203</td>
+                <td><strong>Database Systems</strong><br />Room: D209</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>1:00 PM - 2:15 PM</td>
+                <td>
+                  <strong>Intro to Computer Networks</strong><br />Room: A109
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                  <strong>Intro to Computer Networks</strong><br />Room: A109
+                </td>
+                <td>
+                  <strong>Intro to Software Engineering</strong><br />Room: A210
+                </td>
+                <td>-</td>
+              </tr>
+              <tr>
+                <td>2:30 PM - 3:45 PM</td>
+                <td>
+                  <strong>Probability & Statistics</strong><br />Room: A209
+                </td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>
+                  <strong>Probability & Statistics</strong><br />Room: B103
+                </td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <hr />
+
+        <article>
+          <h3>Course Information</h3>
+          <table border="1">
+            <thead>
+              <tr>
+                <th>Course</th>
+                <th>Code</th>
+                <th>Credits</th>
+                <th>Instructor</th>
+                <th>Schedule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Intro to Computer Networks</td>
+                <td>CSCI 2303</td>
+                <td>6.0</td>
+                <td>Mammadov, Orkhan</td>
+                <td>Monday & Friday 1:00-2:15 PM</td>
+              </tr>
+              <tr>
+                <td>Database Systems</td>
+                <td>CSCI 3615</td>
+                <td>6.0</td>
+                <td>Hasanov, Jamaladdin</td>
+                <td>Wednesday & Friday 10:00-11:15 AM</td>
+              </tr>
+              <tr>
+                <td>Web & Mobile I</td>
+                <td>INFT 2302</td>
+                <td>6.0</td>
+                <td>Sadili, Nuraddin</td>
+                <td>Tuesday & Thursday 10:00-11:15 AM</td>
+              </tr>
+              <tr>
+                <td>Probability & Statistics</td>
+                <td>MATH 2406</td>
+                <td>6.0</td>
+                <td>Muslumov, Ruslan</td>
+                <td>Monday & Friday 2:30-3:45 PM</td>
+              </tr>
+              <tr>
+                <td>Intro to Software Engineering</td>
+                <td>CSCI 3509</td>
+                <td>6.0</td>
+                <td>Ismayilova, Kamila</td>
+                <td>Wednesday 8:30-9:45 AM & Saturday 1:00-2:15 PM</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </main>
+
+      <footer>
         <p>
-          Here's my Fall 2025 class schedule. Times are shown in Asia/Tbilisi
-          timezone.
+          &copy; 2025 Valeh Ismayilov. All rights reserved. |
+          <a href="./contact.html">Get in touch!</a>
         </p>
-      </section>
-
-      <article>
-        <h3>Class Schedule</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Time</th>
-              <th>Monday</th>
-              <th>Tuesday</th>
-              <th>Wednesday</th>
-              <th>Thursday</th>
-              <th>Friday</th>
-              <th>Saturday</th>
-              <th>Sunday</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>8:30 AM - 9:45 AM</td>
-              <td>-</td>
-              <td>-</td>
-              <td>
-                <strong>Intro to Software Engineering</strong><br />Room: B101
-              </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>10:00 AM - 11:15 AM</td>
-              <td>-</td>
-              <td><strong>Web & Mobile I</strong><br />Room: B203</td>
-              <td><strong>Database Systems</strong><br />Room: D209</td>
-              <td><strong>Web & Mobile I</strong><br />Room: B203</td>
-              <td><strong>Database Systems</strong><br />Room: D209</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>1:00 PM - 2:15 PM</td>
-              <td>
-                <strong>Intro to Computer Networks</strong><br />Room: A109
-              </td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>
-                <strong>Intro to Computer Networks</strong><br />Room: A109
-              </td>
-              <td>
-                <strong>Intro to Software Engineering</strong><br />Room: A210
-              </td>
-              <td>-</td>
-            </tr>
-            <tr>
-              <td>2:30 PM - 3:45 PM</td>
-              <td><strong>Probability & Statistics</strong><br />Room: A209</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td><strong>Probability & Statistics</strong><br />Room: B103</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-
-      <hr />
-
-      <article>
-        <h3>Course Information</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>Course</th>
-              <th>Code</th>
-              <th>Credits</th>
-              <th>Instructor</th>
-              <th>Schedule</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Intro to Computer Networks</td>
-              <td>CSCI 2303</td>
-              <td>6.0</td>
-              <td>Mammadov, Orkhan</td>
-              <td>Monday & Friday 1:00-2:15 PM</td>
-            </tr>
-            <tr>
-              <td>Database Systems</td>
-              <td>CSCI 3615</td>
-              <td>6.0</td>
-              <td>Hasanov, Jamaladdin</td>
-              <td>Wednesday & Friday 10:00-11:15 AM</td>
-            </tr>
-            <tr>
-              <td>Web & Mobile I</td>
-              <td>INFT 2302</td>
-              <td>6.0</td>
-              <td>Sadili, Nuraddin</td>
-              <td>Tuesday & Thursday 10:00-11:15 AM</td>
-            </tr>
-            <tr>
-              <td>Probability & Statistics</td>
-              <td>MATH 2406</td>
-              <td>6.0</td>
-              <td>Muslumov, Ruslan</td>
-              <td>Monday & Friday 2:30-3:45 PM</td>
-            </tr>
-            <tr>
-              <td>Intro to Software Engineering</td>
-              <td>CSCI 3509</td>
-              <td>6.0</td>
-              <td>Ismayilova, Kamila</td>
-              <td>Wednesday 8:30-9:45 AM & Saturday 1:00-2:15 PM</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
-    </main>
-    <footer>
-      <p>
-        &copy; 2025 Valeh Ismayilov. All rights reserved. |
-        <a href="./contact.html">Get in touch!</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

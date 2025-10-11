@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Photo Gallery - Valeh Ismayilov's projects (Float Layout)"
+    />
+    <meta name="author" content="Valeh Ismayilov" />
+    <title>Valeh Ismayilov - Photo Gallery (Float Layout)</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      .float-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        overflow: hidden;
+      }
+
+      .gallery-float {
+        overflow: hidden;
+      }
+
+      .gallery-item-float {
+        float: left;
+        width: 30%;
+        margin: 1.5%;
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      .gallery-item-float img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+      }
+
+      .gallery-item-float h3 {
+        margin: 10px 0 5px 0;
+        color: #333;
+      }
+
+      .gallery-item-float p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+      }
+
+      .gallery-item-float a {
+        color: #0066cc;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .achievements-float {
+        clear: both;
+        margin-top: 30px;
+      }
+
+      .achievement-float {
+        float: left;
+        width: 22%;
+        margin: 1.5%;
+        background: #f5f5f5;
+        padding: 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+      }
+
+      .layout-info {
+        background: #e6f3ff;
+        padding: 15px;
+        border: 1px solid #0066cc;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .gallery-item-float,
+        .achievement-float {
+          float: none;
+          width: 100%;
+          margin: 10px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li>
+          <a href="./education-and-experience.html">Education & Experience</a>
+        </li>
+        <li><a href="./schedule.html">Weekly Schedule</a></li>
+        <li><a href="./contact.html">Contact Me</a></li>
+        <li><a href="./gallery.html" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <header>
+        <h1>Photo Gallery (Float Layout) 📸</h1>
+      </header>
+
+      <div class="layout-info">
+        <strong>Float Layout</strong> - Using CSS float for positioning gallery
+        items and achievements.
+      </div>
+
+      <div
+        style="border: 1px solid #d1d5db; padding: 12px; margin-bottom: 24px"
+      >
+        <p style="margin: 0 0 8px 0; font-size: 14px; color: #6b7280">
+          View this gallery in different layouts:
+        </p>
+        <div style="display: flex; gap: 8px; flex-wrap: wrap">
+          <a
+            href="./gallery.html"
+            style="
+              padding: 6px 12px;
+              background: white;
+              color: #374151;
+              text-decoration: none;
+              font-size: 13px;
+              border: 1px solid #d1d5db;
+            "
+            >Default</a
+          >
+          <a
+            href="./gallery-float.html"
+            style="
+              padding: 6px 12px;
+              background: #3b82f6;
+              color: white;
+              text-decoration: none;
+              font-size: 13px;
+              border: 1px solid #3b82f6;
+            "
+            >Float</a
+          >
+          <a
+            href="./gallery-flexbox.html"
+            style="
+              padding: 6px 12px;
+              background: white;
+              color: #374151;
+              text-decoration: none;
+              font-size: 13px;
+              border: 1px solid #d1d5db;
+            "
+            >Flexbox</a
+          >
+          <a
+            href="./gallery-grid.html"
+            style="
+              padding: 6px 12px;
+              background: white;
+              color: #374151;
+              text-decoration: none;
+              font-size: 13px;
+              border: 1px solid #d1d5db;
+            "
+            >Grid</a
+          >
+        </div>
+      </div>
+
+      <main class="float-container">
+        <section>
+          <h2>My Digital Portfolio</h2>
+          <p>
+            Explore my journey through technology, projects, and professional
+            experiences. These images showcase the different platforms and
+            applications I've built, contributing to startups and the tech
+            community.
+          </p>
+
+          <div class="gallery-float clearfix">
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/skilltap.png"
+                alt="Skilltap Platform"
+              />
+              <h3>Skilltap</h3>
+              <p>
+                A platform connecting project owners with talented individuals
+                from diverse backgrounds.
+              </p>
+              <a
+                href="https://skilltap.net"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+
+            <div class="gallery-item-float">
+              <img src="./images/projects/aventra.png" alt="Aventra Platform" />
+              <h3>Aventra</h3>
+              <p>
+                Employee management system for cleaning companies in the US.
+              </p>
+              <a
+                href="https://myaventra.us"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/openconnect.png"
+                alt="OpenConnect Platform"
+              />
+              <h3>OpenConnect</h3>
+              <p>
+                Full-stack ecosystem platform for startups, accelerators, and
+                VCs.
+              </p>
+              <a
+                href="https://opencnt.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/glorri-pricing.png"
+                alt="Glorri Pricing Page"
+              />
+              <h3>Glorri Pricing</h3>
+              <p>Refactored pricing page for Glorri's ATS platform.</p>
+              <a
+                href="https://glorri.com/en/pricing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/glorri-talents.png"
+                alt="Glorri Talents Platform"
+              />
+              <h3>Glorri Talents</h3>
+              <p>Platform for transparent job application tracking.</p>
+              <span style="color: #6b7280">In Development</span>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/ltc-angels.png"
+                alt="LTC Angels Website"
+              />
+              <h3>LTC Angels</h3>
+              <p>
+                Website for LTC Angel investors community built with Next.js.
+              </p>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/crable.png"
+                alt="Crable Application"
+              />
+              <h3>Crable</h3>
+              <p>SaaS application providing web crawling services.</p>
+            </div>
+
+            <div class="gallery-item-float">
+              <img src="./images/projects/usg-website.png" alt="USG Website" />
+              <h3>USG Website</h3>
+              <p>
+                Website system for United Student Government of ADA University.
+              </p>
+              <a
+                href="https://usg.az"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+
+            <div class="gallery-item-float">
+              <img
+                src="./images/projects/seclub.png"
+                alt="Software Engineering Club"
+              />
+              <h3>SE Club</h3>
+              <p>Software Engineering Club at ADA School for students.</p>
+              <a
+                href="https://seclub.valehismayilov.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Visit Live Site →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="achievements-float">
+          <h2>Technical Achievements</h2>
+          <p>
+            Each project represents a milestone in my development journey,
+            showcasing different technologies and problem-solving approaches.
+          </p>
+
+          <div class="clearfix">
+            <div class="achievement-float">
+              <h4>🚀 Full-Stack Development</h4>
+              <p>Built complete applications from database to UI</p>
+            </div>
+
+            <div class="achievement-float">
+              <h4>🔧 Modern Tech Stack</h4>
+              <p>TypeScript, React, Next.js, NestJS, PostgreSQL</p>
+            </div>
+
+            <div class="achievement-float">
+              <h4>📈 Business Impact</h4>
+              <p>Solutions serving 60+ startups and thousands of users</p>
+            </div>
+
+            <div class="achievement-float">
+              <h4>👥 Team Leadership</h4>
+              <p>Led development teams and mentored developers</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer style="clear: both; margin-top: 30px">
+        <p>
+          &copy; 2025 Valeh Ismayilov. All rights reserved. |
+          <a href="./contact.html">Get in touch!</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

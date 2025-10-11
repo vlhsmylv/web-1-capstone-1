@@ -10,273 +10,280 @@
     <meta name="author" content="Valeh Ismayilov" />
     <title>Valeh Ismayilov - Home</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>Welcome to Valeh Ismayilov's Personal Website 🚀</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li>
-            <a href="./education-and-experience.html">Education & Experience</a>
-          </li>
-          <li><a href="./schedule.html">Weekly Schedule</a></li>
-          <li><a href="./contact.html">Contact Me</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li>
+          <a href="./education-and-experience.html">Education & Experience</a>
+        </li>
+        <li><a href="./schedule.html">Weekly Schedule</a></li>
+        <li><a href="./contact.html">Contact Me</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
 
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <img
-          src="./images/profile.png"
-          alt="Valeh Ismayilov Profile Picture"
-          width="200"
-          height="200"
-        />
+    <div class="container">
+      <header>
+        <h1>Welcome to Valeh Ismayilov's Personal Website 🚀</h1>
+      </header>
 
+      <main>
+        <section>
+          <h2>About Me</h2>
+          <div id="personal-img">
+            <img
+              src="./images/profile.png"
+              alt="Valeh Ismayilov Profile Picture"
+              class="profile-picture"
+            />
+            <a
+              id="egg"
+              href="https://www.youtube.com/shorts/LCTisnjyCAQ"
+              target="_blank"
+            ></a>
+          </div>
+
+          <p>
+            Hi there! 👋 I'm Valeh Ismayilov, a passionate software engineer and
+            student currently pursuing my studies in Information Technologies at
+            ADA University. I love creating innovative solutions and exploring
+            new technologies.
+          </p>
+
+          <p>
+            I'm originally from Azerbaijan and currently based in Baku. My
+            journey in technology started with a curiosity about how things
+            work, and it has evolved into a deep passion for building meaningful
+            applications that make a difference.
+          </p>
+
+          <h3>My Interests & Hobbies</h3>
+          <ul>
+            <li>Web Development (Full-stack)</li>
+            <li>Business Development</li>
+            <li>Startup Ecosystems</li>
+            <li>Communities and Networks</li>
+          </ul>
+
+          <h3>Technical Skills</h3>
+          <ol>
+            <li>Programming Languages: TypeScript</li>
+            <li>
+              Frameworks & Libraries: React, Node.js, Express, NestJS, Next.js
+            </li>
+            <li>Databases: PostgreSQL, MongoDB, Redis</li>
+            <li>Tools: Git, VS Code, Figma, Jira, Notion, Click Up</li>
+            <li>Cloud Services: AWS, Azure, GCP, DigitalOcean, Cloudflare</li>
+          </ol>
+
+          <h3>Current Goals</h3>
+          <p>I'm currently focused on:</p>
+          <ul>
+            <li>Mastering full-stack web development</li>
+            <li>Building a strong portfolio of projects</li>
+            <li>Contributing to open-source projects</li>
+            <li>
+              Networking with other developers in the tech and entrepreneurship
+              community
+            </li>
+          </ul>
+
+          <h3>Fun Facts About Me 🎯</h3>
+          <p>Here are some interesting things you might not know:</p>
+          <ul>
+            <li>
+              I love searching for global practices in different areas in my
+              free time and applying them in my plans/actions (not sure if it's
+              funny)
+            </li>
+            <li>
+              I'm a coffee enthusiast (addict) ☕ and love trying different
+              brewing methods
+            </li>
+          </ul>
+
+          <p>
+            Check out my existing website at
+            <a
+              href="https://www.valehismayilov.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              >www.valehismayilov.com</a
+            >
+            to see more of my work!
+          </p>
+        </section>
+
+        <section>
+          <h2>Recent Projects</h2>
+          <div>
+            <h3>Skilltap</h3>
+            <p>
+              Skilltap is a platform that helps project owners to share their
+              projects and find people from different backgrounds for their
+              teams. We're partnering with academies, universities, and
+              innovation centers for talent and project exchange.
+            </p>
+            <a
+              href="https://skilltap.net"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/projects/skilltap.png"
+                alt="SkillTap"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h3>Aventra</h3>
+            <p>
+              Aventra is an employee management system for cleaning companies in
+              US.
+            </p>
+            <a
+              href="https://myaventra.us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/projects/aventra.png"
+                alt="Aventra"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h3>OpenConnect</h3>
+            <p>
+              Created full-stack project, where startups, accelerators, VCs can
+              create account, one-pager and view other ecosystem players.
+            </p>
+            <a
+              href="https://opencnt.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/projects/openconnect.png"
+                alt="OpenConnect"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h3>LTC Angels</h3>
+            <p>
+              Website for LTC Angel investors community created with NextJs.
+            </p>
+            <img
+              src="./images/projects/ltc-angels.png"
+              alt="LTC Angels"
+              class="project-image"
+            />
+          </div>
+
+          <div>
+            <h3>Crable</h3>
+            <p>
+              Created full-stack app for a startup named Crable, which aims to
+              provide crawling services to marketing professionals and agencies.
+            </p>
+            <img
+              src="./images/projects/crable.png"
+              alt="Crable"
+              class="project-image"
+            />
+          </div>
+
+          <div>
+            <h3>Glorri Pricing Page</h3>
+            <p>
+              Refactored and redesigned pricing page of Glorri startup in their
+              landing website.
+            </p>
+            <a
+              href="https://glorri.com/en/pricing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/projects/glorri-pricing.png"
+                alt="Glorri Pricing Page"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h3>Glorri Talents (in progress)</h3>
+            <p>
+              Glorri Talents is a platform designed to give candidates
+              transparent access to their job applications — allowing them to
+              track application status, complete exams, and manage the hiring
+              process in one place.
+            </p>
+            <img
+              src="./images/projects/glorri-talents.png"
+              alt="Glorri Talents"
+              class="project-image"
+            />
+          </div>
+
+          <div>
+            <h3>USG Website</h3>
+            <p>
+              Website system for United Student Government of ADA University.
+              System consists of 3 parts: API, Admin, Website.
+            </p>
+            <a href="https://usg.az" target="_blank" rel="noopener noreferrer">
+              <img
+                src="./images/projects/usg-website.png"
+                alt="USG Website"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <div>
+            <h3>Software Engineering Club</h3>
+            <p>
+              Founded Software Engineering Club at ADA School, where students
+              can learn about software engineering fundamentals.
+            </p>
+            <a
+              href="https://seclub.valehismayilov.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./images/projects/seclub.png"
+                alt="Software Engineering Club"
+                class="project-image"
+              />
+            </a>
+          </div>
+
+          <p>
+            I'm always working on exciting new projects. From web applications
+            to mobile apps, I love turning ideas into reality through code.
+          </p>
+        </section>
+      </main>
+
+      <footer>
         <p>
-          Hi there! 👋 I'm Valeh Ismayilov, a passionate software engineer and
-          student currently pursuing my studies in Information Technologies at
-          ADA University. I love creating innovative solutions and exploring new
-          technologies.
+          &copy; 2025 Valeh Ismayilov. All rights reserved. |
+          <a href="./contact.html">Get in touch!</a>
         </p>
-
-        <p>
-          I'm originally from Azerbaijan and currently based in Baku. My journey
-          in technology started with a curiosity about how things work, and it
-          has evolved into a deep passion for building meaningful applications
-          that make a difference.
-        </p>
-
-        <h3>My Interests & Hobbies</h3>
-        <ul>
-          <li>Web Development (Full-stack)</li>
-          <li>Business Development</li>
-          <li>Startup Ecosystems</li>
-          <li>Communities and Networks</li>
-        </ul>
-
-        <h3>Technical Skills</h3>
-        <ol>
-          <li>Programming Languages: TypeScript</li>
-          <li>Frameworks: React, Node.js, Express, NestJS, Next.js</li>
-          <li>Databases: PostgreSQL, MongoDB, Redis</li>
-          <li>Tools: Git, VS Code, Figma, Jira, Notion, Click Up</li>
-          <li>Cloud Services: AWS, Azure, GCP, DigitalOcean, Cloudflare</li>
-        </ol>
-
-        <h3>Current Goals</h3>
-        <p>I'm currently focused on:</p>
-        <ul>
-          <li>Mastering full-stack web development</li>
-          <li>Building a strong portfolio of projects</li>
-          <li>Contributing to open-source projects</li>
-          <li>
-            Networking with other developers in the tech and entrepreneurship
-            community
-          </li>
-        </ul>
-
-        <h3>Fun Facts About Me 🎯</h3>
-        <p>Here are some interesting things you might not know:</p>
-        <ul>
-          <li>
-            I love searching for global practices in different areas in my free
-            time and applying them in my plans/actions (not sure if it's funny)
-          </li>
-          <li>
-            I'm a coffee enthusiast (addict) ☕ and love trying different
-            brewing methods
-          </li>
-        </ul>
-
-        <p>
-          Check out my existing website at
-          <a
-            href="https://www.valehismayilov.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            >www.valehismayilov.com</a
-          >
-          to see more of my work!
-        </p>
-      </section>
-
-      <section>
-        <h2>Recent Projects</h2>
-        <div>
-          <h3>Skilltap</h3>
-          <p>
-            Skilltap is a platform that helps project owners to share their
-            projects and find people from different backgrounds for their teams.
-            We're partnering with academies, universities, and innovation
-            centers for talent and project exchange.
-          </p>
-          <a
-            href="https://skilltap.net"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/projects/skilltap.png"
-              alt="SkillTap"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h3>Aventra</h3>
-          <p>
-            Aventra is an employee management system for cleaning companies in
-            US.
-          </p>
-          <a
-            href="https://myaventra.us"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/projects/aventra.png"
-              alt="Aventra"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h3>OpenConnect</h3>
-          <p>
-            Created full-stack project, where startups, accelerators, VCs can
-            create account, one-pager and view other ecosystem players.
-          </p>
-          <a
-            href="https://opencnt.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/projects/openconnect.png"
-              alt="OpenConnect"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h3>LTC Angels</h3>
-          <p>Website for LTC Angel investors community created with NextJs.</p>
-          <img
-            src="./images/projects/ltc-angels.png"
-            alt="LTC Angels"
-            width="500"
-            height="300"
-          />
-        </div>
-
-        <div>
-          <h3>Crable</h3>
-          <p>
-            Created full-stack app for a startup named Crable, which aims to
-            provide crawling services to marketing professionals and agencies.
-          </p>
-          <img
-            src="./images/projects/crable.png"
-            alt="Crable"
-            width="500"
-            height="300"
-          />
-        </div>
-
-        <div>
-          <h3>Glorri Pricing Page</h3>
-          <p>
-            Refactored and redesigned pricing page of Glorri startup in their
-            landing website.
-          </p>
-          <a
-            href="https://glorri.com/en/pricing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/projects/glorri-pricing.png"
-              alt="Glorri Pricing Page"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h3>Glorri Talents (in progress)</h3>
-          <p>
-            Glorri Talents is a platform designed to give candidates transparent
-            access to their job applications — allowing them to track
-            application status, complete exams, and manage the hiring process in
-            one place.
-          </p>
-          <img
-            src="./images/projects/glorri-talents.png"
-            alt="Glorri Talents"
-            width="500"
-            height="300"
-          />
-        </div>
-
-        <div>
-          <h3>USG Website</h3>
-          <p>
-            Website system for United Student Government of ADA University.
-            System consists of 3 parts: API, Admin, Website.
-          </p>
-          <a href="https://usg.az" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./images/projects/usg-website.png"
-              alt="USG Website"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <div>
-          <h3>Software Engineering Club</h3>
-          <p>
-            Founded Software Engineering Club at ADA School, where students can
-            learn about software engineering fundamentals.
-          </p>
-          <a
-            href="https://seclub.valehismayilov.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src="./images/projects/seclub.png"
-              alt="Software Engineering Club"
-              width="500"
-              height="300"
-            />
-          </a>
-        </div>
-
-        <p>
-          I'm always working on exciting new projects. From web applications to
-          mobile apps, I love turning ideas into reality through code.
-        </p>
-      </section>
-    </main>
-
-    <footer>
-      <p>
-        &copy; 2025 Valeh Ismayilov. All rights reserved. |
-        <a href="./contact.html">Get in touch!</a>
-      </p>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
