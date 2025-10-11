@@ -1,0 +1,489 @@
+/* Google Fonts Import */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* CSS Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling - 90% width, centered */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for main content */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 15px 0;
+}
+
+/* Headers */
+h1 {
+  color: #222222;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #444444;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 2rem 0 1rem 0;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  color: #555555;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 1.5rem 0 0.8rem 0;
+}
+
+h4 {
+  color: #64748b;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 1rem 0 0.5rem 0;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Links */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+/* Horizontal Rules - shorter, thicker, dotted/dashed, centered */
+hr {
+  width: 50%;
+  height: 2px;
+  background: #cccccc;
+  border: none;
+  margin: 1.5rem auto;
+}
+
+/* Alternative dashed style */
+hr.dashed {
+  background: none;
+  border-top: 2px dashed #999999;
+}
+
+/* Profile Picture Styling - circular, hover effect */
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #dddddd;
+  display: block;
+  margin: 1.5rem auto;
+  transition: all 1s ease-out;
+}
+
+.profile-picture:hover {
+  width: 220px;
+  height: 220px;
+  border-color: #0066cc;
+  transition: all 1s ease-out;
+}
+
+/* Navigation Styling */
+nav {
+  background: #0066cc;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav a:hover {
+  background-color: #004499;
+  text-decoration: none;
+  color: white;
+}
+
+/* Active page styling */
+nav a.active {
+  background-color: #004499;
+  font-weight: 500;
+}
+
+nav a.active:hover {
+  background-color: #004499;
+}
+
+/* List Styling */
+ul:not(nav ul) {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+li:not(nav li) {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Enhanced list styling */
+ul:not(nav ul) li::marker {
+  color: #0066cc;
+}
+
+ol li::marker {
+  color: #0066cc;
+  font-weight: 500;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  border: 1px solid #dddddd;
+}
+
+th {
+  background: #f5f5f5;
+  color: #333333;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 500;
+  border-bottom: 2px solid #cccccc;
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eeeeee;
+  vertical-align: top;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f0f0f0;
+}
+
+/* Form Styling */
+form {
+  background: #fafafa;
+  padding: 1.5rem;
+  border: 1px solid #dddddd;
+  margin: 1.5rem 0;
+}
+
+fieldset {
+  border: 1px solid #cccccc;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: white;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: 500;
+  color: #333333;
+}
+
+label {
+  display: block;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 0.3rem;
+  margin-top: 0.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="range"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  font-size: 1rem;
+  background: white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #0066cc;
+}
+
+/* Checkbox and Radio Styling */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+/* Button Styling */
+input[type="submit"],
+input[type="reset"] {
+  background: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem 0.5rem 0 0;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #004499;
+}
+
+input[type="reset"] {
+  background: #666666;
+}
+
+input[type="reset"]:hover {
+  background: #444444;
+}
+
+/* Pseudo-classes and Pseudo-elements */
+input:required::after {
+  content: " *";
+  color: #cc0000;
+}
+
+input:invalid {
+  border-color: #cc0000;
+}
+
+input:valid {
+  border-color: #008800;
+}
+
+/* ::before pseudo-element for enhanced sections */
+section::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #0066cc;
+  margin-bottom: 1rem;
+}
+
+/* Layout Sections */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+
+article {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #cccccc;
+  margin-top: 2rem;
+  color: #666666;
+}
+
+/* Project Images */
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #dddddd;
+  margin: 1rem 0;
+}
+
+.project-image:hover {
+  border-color: #0066cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    width: 95%;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  table {
+    font-size: 0.875rem;
+  }
+
+  th,
+  td {
+    padding: 0.5rem;
+  }
+
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+
+  .profile-picture:hover {
+    width: 170px;
+    height: 170px;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+/* Gallery Styles */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.gallery-item {
+  background: white;
+  border: 1px solid #dddddd;
+}
+
+.gallery-item:hover {
+  border-color: #0066cc;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.gallery-item-content {
+  padding: 1rem;
+}
+
+/* Desktop: 3 images per row, Mobile: 1 image per row */
+@media (min-width: 769px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Achievements Grid */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.achievement-item {
+  background: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+.achievement-item:hover {
+  border-color: #0066cc;
+}
+
+.achievement-item h4 {
+  color: #333333;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.achievement-item p {
+  color: #666666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+#egg {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#personal-img {
+  position: relative;
+}

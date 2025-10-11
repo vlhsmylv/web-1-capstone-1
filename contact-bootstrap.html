@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Valeh Ismayilov - Get in touch for collaborations and opportunities (Bootstrap Version)"
+    />
+    <meta name="author" content="Valeh Ismayilov" />
+    <title>Valeh Ismayilov - Contact Me (Bootstrap)</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      :root {
+        --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        --success-gradient: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      }
+
+      .navbar-custom {
+        background: var(--primary-gradient) !important;
+      }
+
+      .btn-gradient-primary {
+        background: var(--primary-gradient);
+        border: none;
+        color: white;
+        transition: all 0.3s ease;
+      }
+
+      .btn-gradient-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        color: white;
+      }
+
+      .btn-gradient-success {
+        background: var(--success-gradient);
+        border: none;
+        color: white;
+      }
+
+      .btn-gradient-success:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        color: white;
+      }
+
+      .card-custom {
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .card-custom:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      .form-control:focus {
+        border-color: #667eea;
+        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+      }
+
+      .hero-section {
+        background: var(--primary-gradient);
+        color: white;
+        padding: 4rem 0;
+        text-align: center;
+      }
+
+      .contact-info-card {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        border-left: 4px solid #667eea;
+      }
+
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+        background: white;
+        border-radius: 8px;
+        text-decoration: none;
+        color: #374151;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .social-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        color: #667eea;
+      }
+
+      .comparison-section {
+        background: #f8fafc;
+        border-radius: 10px;
+        padding: 2rem;
+        margin: 3rem 0;
+      }
+
+      .feature-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="./index.html">
+          <i class="bi bi-code-slash"></i> Valeh Ismayilov
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./education-and-experience.html"
+                >Education & Experience</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./schedule.html">Weekly Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="./contact.html">Contact Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4 fw-bold mb-3">Let's Connect! 📧</h1>
+        <p class="lead">
+          Ready to collaborate, innovate, or just chat about technology?
+        </p>
+        <a href="#contact-form" class="btn btn-light btn-lg mt-3"
+          >Get In Touch</a
+        >
+      </div>
+    </section>
+
+    <div class="container my-5">
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        <strong>Bootstrap Version!</strong> This page demonstrates Bootstrap
+        components including navbar, cards, forms, and grid system.
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="alert"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="card card-custom contact-info-card h-100">
+            <div class="card-header bg-transparent">
+              <h3 class="card-title mb-0">
+                <i class="bi bi-person-lines-fill text-primary me-2"></i>
+                Contact Information
+              </h3>
+            </div>
+            <div class="card-body">
+              <div class="mb-4">
+                <h6 class="text-muted mb-2">EMAIL</h6>
+                <p class="mb-0">vismayilov15706@ada.edu.az</p>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="text-muted mb-2">SOCIAL LINKS</h6>
+                <div class="d-grid gap-2">
+                  <a
+                    href="https://linkedin.com/in/vismayilov"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="bi bi-linkedin text-primary"></i>
+                    LinkedIn Profile
+                  </a>
+                  <a
+                    href="https://github.com/vlhsmylv"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="bi bi-github text-dark"></i>
+                    GitHub Profile
+                  </a>
+                  <a
+                    href="https://www.valehismayilov.com"
+                    target="_blank"
+                    class="social-link"
+                  >
+                    <i class="bi bi-globe text-success"></i>
+                    Personal Website
+                  </a>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <h6 class="text-muted mb-2">AVAILABILITY</h6>
+                <span class="badge bg-success rounded-pill">
+                  <i class="bi bi-circle-fill me-1"></i>
+                  Available for Projects
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="card card-custom" id="contact-form">
+            <div class="card-header bg-primary text-white">
+              <h3 class="card-title mb-0">
+                <i class="bi bi-envelope-fill me-2"></i>
+                Send Me a Message
+              </h3>
+            </div>
+            <div class="card-body">
+              <form action="https://formspree.io/f/xblangky" method="POST">
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                      />
+                      <label for="name">Full Name *</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="your.email@example.com"
+                        required
+                      />
+                      <label for="email">Email Address *</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="tel"
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="+994 (55) 123-45-67"
+                      />
+                      <label for="phone">Phone Number</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="company"
+                        name="company"
+                        placeholder="Your Company"
+                      />
+                      <label for="company">Company/Organization</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="subject"
+                      name="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                    <label for="subject">Subject *</label>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      name="message"
+                      placeholder="Your message"
+                      style="height: 120px"
+                      required
+                    ></textarea>
+                    <label for="message">Message *</label>
+                  </div>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="contact-reason" class="form-label"
+                      >Reason for Contact</label
+                    >
+                    <select
+                      class="form-select"
+                      id="contact-reason"
+                      name="contact-reason"
+                    >
+                      <option value="">Please select...</option>
+                      <option value="job-opportunity">Job Opportunity</option>
+                      <option value="project-collaboration">
+                        Project Collaboration
+                      </option>
+                      <option value="freelance-work">Freelance Work</option>
+                      <option value="mentorship">Mentorship</option>
+                      <option value="networking">Networking</option>
+                      <option value="general-inquiry">General Inquiry</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="timeline" class="form-label"
+                      >Project Timeline</label
+                    >
+                    <select class="form-select" id="timeline" name="timeline">
+                      <option value="">Not applicable</option>
+                      <option value="asap">As soon as possible</option>
+                      <option value="1-month">Within 1 month</option>
+                      <option value="3-months">Within 3 months</option>
+                      <option value="6-months">Within 6 months</option>
+                      <option value="flexible">Flexible</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label">Project Type (if applicable)</label>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="web-dev"
+                          name="project-type"
+                          value="web-development"
+                        />
+                        <label class="form-check-label" for="web-dev">
+                          Web Development
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="consulting"
+                          name="project-type"
+                          value="consulting"
+                        />
+                        <label class="form-check-label" for="consulting">
+                          Technical Consulting
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="other-project"
+                          name="project-type"
+                          value="other"
+                        />
+                        <label class="form-check-label" for="other-project">
+                          Other
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label"
+                    >Preferred Communication Method</label
+                  >
+                  <div class="row">
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="email-pref"
+                          name="communication"
+                          value="email"
+                          checked
+                        />
+                        <label class="form-check-label" for="email-pref">
+                          Email
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="phone-pref"
+                          name="communication"
+                          value="phone"
+                        />
+                        <label class="form-check-label" for="phone-pref">
+                          Phone Call
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="video-pref"
+                          name="communication"
+                          value="video"
+                        />
+                        <label class="form-check-label" for="video-pref">
+                          Video Call
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          id="meeting-pref"
+                          name="communication"
+                          value="in-person"
+                        />
+                        <label class="form-check-label" for="meeting-pref">
+                          In-Person
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-check mb-4">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="terms"
+                    name="terms"
+                    value="agreed"
+                    required
+                  />
+                  <label class="form-check-label" for="terms">
+                    I agree that my information may be stored for communication
+                    purposes *
+                  </label>
+                </div>
+
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                  <button type="reset" class="btn btn-outline-secondary btn-lg">
+                    <i class="bi bi-arrow-clockwise me-2"></i>Clear Form
+                  </button>
+                  <button type="submit" class="btn btn-gradient-primary btn-lg">
+                    <i class="bi bi-send-fill me-2"></i>Send Message 🚀
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0">
+              &copy; 2025 Valeh Ismayilov. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <a href="./contact.html" class="btn btn-gradient-success btn-sm">
+              <i class="bi bi-arrow-left me-1"></i>Back to Custom CSS Version
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+  </body>
+</html>
