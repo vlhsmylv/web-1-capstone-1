@@ -364,7 +364,7 @@ This project is version-controlled using Git and hosted on GitHub, maintaining t
 ### Live Website
 
 The website is deployed using GitHub Pages and is accessible at:
-**[Live Website Link]** - _To be updated after deployment_
+**https://vlhsmylv.github.io/web-1-capstone-1/** - _To be updated after deployment_
 
 ### Development Process
 
